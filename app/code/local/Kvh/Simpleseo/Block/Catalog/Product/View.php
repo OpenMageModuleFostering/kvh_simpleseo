@@ -31,15 +31,19 @@ class Kvh_Simpleseo_Block_Catalog_Product_View extends Mage_Catalog_Block_Produc
 		
 		
 		$product = $this->getProduct();
+		$currentCategory = Mage::registry('current_category');
+		
 		 
 		$word=array_unique($words[1]);
 		  
-		
+		 
 		foreach($word as $w)
 		{ 
-			$p= strpos($w,'product_');
-		
-			if($p==0)
+			$data="";
+			$cdata="";
+			$p= explode("_",$w);
+			 
+			if($p[0]=="product")
 			{
 				$attribute=substr($w,8);	
 				$attributeModel = Mage::getModel('eav/entity_attribute')->loadByCode("catalog_product",$attribute);
@@ -57,9 +61,37 @@ class Kvh_Simpleseo_Block_Catalog_Product_View extends Mage_Catalog_Block_Produc
 				
 				} 
 				$product_meta_title=str_replace("[".$w."]",$data,$product_meta_title);  
-				$product_meta_keyword=str_replace("[".$w."]",$data,$product_meta_keyword);  
-				$product_meta_description=str_replace("[".$w."]",$data,$product_meta_description);  
+			$product_meta_keyword=str_replace("[".$w."]",$data,$product_meta_keyword);  
+			$product_meta_description=str_replace("[".$w."]",$data,$product_meta_description);  
+				
+			}
+			
+			if($p[0]=="category")
+			{
+				$attribute=substr($w,9);	
+				$attributeModel = Mage::getModel('eav/entity_attribute')->loadByCode("catalog_category",$attribute);
+				 
+				$attrtype=$attributeModel->getFrontendInput();
+				
+				switch($attrtype)
+				{
+				case "text":
+						$cdata=$currentCategory->getData($attribute); 
+					break;
+				case  "select":
+						$cdata=$currentCategory->getAttributeText($attribute); 
+					break;
+				
+				} 
+			$product_meta_title=str_replace("[".$w."]",$cdata,$product_meta_title);  
+			$product_meta_keyword=str_replace("[".$w."]",$cdata,$product_meta_keyword);  
+			$product_meta_description=str_replace("[".$w."]",$cdata,$product_meta_description);  
+				
 			} 
+		 	
+			
+			
+			
 		
 		}   
 			$headBlock = $this->getLayout()->getBlock('head');

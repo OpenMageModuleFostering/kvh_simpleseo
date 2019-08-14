@@ -1,44 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>Kvh_Simpleseo</name>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">OSL</license>
     <channel>community</channel>
     <extends/>
-    <summary>Simple Seo for Set Meta data on Fly</summary>
-    <description>SimpleSeo extension is use for set Dynamic Meta Data on Fly with a simple configuration&#xD;
-&#xD;
-You can set Meta Title , Meta Keyword and Meta Description dynamic&#xD;
-&#xD;
-Example if your product name is XYZ Product&#xD;
-and you want to set meta title like Buy XYZ Product from ABC Brand then you can set it by set configuration like&#xD;
-Buy [product_name] from [product_manufacturer] Brand&#xD;
-&#xD;
-Instruction&#xD;
-&#xD;
-1) Go to System &gt; Configuration &#xD;
-2) Select Catalog from left bar&#xD;
-3) Select Simple Seo Section&#xD;
-4) If you want to set the meta data formula then and want to use category attributes like name then you have to use like this&#xD;
-[category_name]  Where category_ is the prefix and name is the category attribute, you have to use prefix category_ for category attributes and prefix product_ for product attribute, please check screenshot for more information&#xD;
-&#xD;
-if you need any assistance for installation and configuration then contact us at kvhsolutions@gmail.com&#xD;
-&#xD;
-&#xD;
-&#xD;
-&#xD;
-&#xD;
-&#xD;
-&#xD;
-&#xD;
-&#xD;
-</description>
-    <notes>Introducing the first version of simple seo</notes>
+    <summary>Set Meta Deta for Category Product and CMS Page</summary>
+    <description>Set Meta Deta for Category Product and CMS Page</description>
+    <notes>Add Field for Meta TItle for CMS Page</notes>
     <authors><author><name>Hitesh Agrawal</name><user>hiteshmca111</user><email>hiteshagrawal84@gmail.com</email></author></authors>
-    <date>2014-04-19</date>
-    <time>10:00:34</time>
-    <contents><target name="magelocal"><dir name="Kvh"><dir name="SimpleSeo"><dir name="Block"><dir name="Catalog"><dir name="Category"><file name="View.php" hash="323bfab0a57537cf31bb194249d742b0"/></dir><dir name="Product"><file name="View.php" hash="e779f1ea6d2ebb5cb088f33874abe2ac"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="5fadf3f0393b37b97081a4523d33a9fd"/><file name="system.xml" hash="d211de5b39a2be97d9c9b34807df4de9"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Kvh_Simpleseo.xml" hash="6cb871dc56b9e5b4e0b13ef121723011"/></dir></target></contents>
+    <date>2014-05-03</date>
+    <time>07:03:47</time>
+    <contents><target name="magelocal"><dir name="Kvh"><dir name="Simpleseo"><dir name="Block"><dir name="Catalog"><dir name="Category"><file name="View.php" hash="323bfab0a57537cf31bb194249d742b0"/></dir><dir name="Product"><file name="View.php" hash="ed453215d56eb69d2d711ec90a00e714"/></dir></dir><dir name="Cms"><file name="Page.php" hash="fe3a5de0e4f077971f7b4f89b295e943"/></dir></dir><dir name="Model"><dir name="Mysql4"><dir name="Simpleseo"><file name="Collection.php" hash="5fbd40e6e9a88afd782347a366900844"/></dir><file name="Simpleseo.php" hash="f605ec62d70f16c372f22e64654c0ab6"/></dir><file name="Observer.php" hash="12cf363b801d3f040a6e72cc8d4eecbf"/><file name="Simpleseo.php" hash="cdd9f7ced30b06f8b82a83038bd3c883"/></dir><dir name="etc"><file name="config.xml" hash="fb31c1b447668ddff25d8e8c8f3fe1cc"/><file name="system.xml" hash="d211de5b39a2be97d9c9b34807df4de9"/></dir><dir name="sql"><dir name="simpleseo_setup"><file name="mysql4-install-0.2.0.php" hash="e6c4d3f985200a5f38b5f3465311d9cc"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Kvh_Simpleseo.xml" hash="6cb871dc56b9e5b4e0b13ef121723011"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
