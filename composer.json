@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Kvh_Simpleseo",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Simple Seo for Set Meta data on Fly",
+    "authors": [
+    {
+        "name": "Hitesh Agrawal",
+        "email": "hiteshagrawal84@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

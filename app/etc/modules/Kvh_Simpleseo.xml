@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<config>
+
+    <modules>
+
+        <Kvh_Simpleseo>
+
+            <active>true</active>
+
+            <codePool>local</codePool>
+
+        </Kvh_Simpleseo>
+
+    </modules>
+
+</config> 
