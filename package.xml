@@ -1,18 +1,40 @@
 <?xml version="1.0"?>
 <package>
     <name>Kvh_Simpleseo</name>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">OSL</license>
     <channel>community</channel>
     <extends/>
-    <summary>Set Meta Deta for Category Product and CMS Page</summary>
-    <description>Set Meta Deta for Category Product and CMS Page</description>
-    <notes>Add Field for Meta TItle for CMS Page</notes>
+    <summary> Set Dyanamic Meta Title , Meta Keyword, Meta Description for category and product and Meta Title for Cms Page </summary>
+    <description>SimpleSeo extension is use for set Dynamic Meta Data on Fly with a simple configuration&#xD;
+&#xD;
+You can set Meta Title , Meta Keyword and Meta Description dynamic&#xD;
+&#xD;
+Example: if your product name is XYZ Product and you want to set meta title like Buy XYZ Product from ABC Brand then you can set it by set configuration like Buy [product_name] from [product_manufacturer] Brand&#xD;
+&#xD;
+Instruction&#xD;
+&#xD;
+For Set Meta Data for Category and Product&#xD;
+&#xD;
+1) Go to System &gt; Configuration&#xD;
+&#xD;
+2) Select Catalog from left bar&#xD;
+&#xD;
+3) Select Simple Seo Section&#xD;
+&#xD;
+4) If you want to set the meta data formula then and want to use category attributes like name then you have to use like this [category_name] Where category_ is the prefix and name is the category attribute, you have to use prefix category_ for category attributes and prefix product_ for product attribute,&#xD;
+&#xD;
+Set Meta Title for CMS Page&#xD;
+&#xD;
+1) Go to Cms &gt; Page &gt; Meta Data&#xD;
+&#xD;
+please check screenshot for more information</description>
+    <notes>Fix Price issue in meta data</notes>
     <authors><author><name>Hitesh Agrawal</name><user>hiteshmca111</user><email>hiteshagrawal84@gmail.com</email></author></authors>
-    <date>2014-05-03</date>
-    <time>07:03:47</time>
-    <contents><target name="magelocal"><dir name="Kvh"><dir name="Simpleseo"><dir name="Block"><dir name="Catalog"><dir name="Category"><file name="View.php" hash="323bfab0a57537cf31bb194249d742b0"/></dir><dir name="Product"><file name="View.php" hash="ed453215d56eb69d2d711ec90a00e714"/></dir></dir><dir name="Cms"><file name="Page.php" hash="fe3a5de0e4f077971f7b4f89b295e943"/></dir></dir><dir name="Model"><dir name="Mysql4"><dir name="Simpleseo"><file name="Collection.php" hash="5fbd40e6e9a88afd782347a366900844"/></dir><file name="Simpleseo.php" hash="f605ec62d70f16c372f22e64654c0ab6"/></dir><file name="Observer.php" hash="12cf363b801d3f040a6e72cc8d4eecbf"/><file name="Simpleseo.php" hash="cdd9f7ced30b06f8b82a83038bd3c883"/></dir><dir name="etc"><file name="config.xml" hash="fb31c1b447668ddff25d8e8c8f3fe1cc"/><file name="system.xml" hash="d211de5b39a2be97d9c9b34807df4de9"/></dir><dir name="sql"><dir name="simpleseo_setup"><file name="mysql4-install-0.2.0.php" hash="e6c4d3f985200a5f38b5f3465311d9cc"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Kvh_Simpleseo.xml" hash="6cb871dc56b9e5b4e0b13ef121723011"/></dir></target></contents>
+    <date>2014-06-06</date>
+    <time>04:13:00</time>
+    <contents><target name="magelocal"><dir name="Kvh"><dir name="Simpleseo"><dir name="Block"><dir name="Catalog"><dir name="Category"><file name="View.php" hash="323bfab0a57537cf31bb194249d742b0"/></dir><dir name="Product"><file name="View.php" hash="e88e6d447345d8fdb90b0a3b6493e4a4"/></dir></dir><dir name="Cms"><file name="Page.php" hash="fe3a5de0e4f077971f7b4f89b295e943"/></dir></dir><dir name="Model"><dir name="Mysql4"><dir name="Simpleseo"><file name="Collection.php" hash="5fbd40e6e9a88afd782347a366900844"/></dir><file name="Simpleseo.php" hash="f605ec62d70f16c372f22e64654c0ab6"/></dir><file name="Observer.php" hash="e43555c6324e205577018bc2cb2c78e2"/><file name="Simpleseo.php" hash="cdd9f7ced30b06f8b82a83038bd3c883"/><dir name="System"><dir name="Config"><file name="Robot.php" hash="e6805d2382790218abe97e7033d5d89a"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="2f534e56b09bfd5d650baeebcddcf972"/><file name="system.xml" hash="e6247817e2e369d904bbcc9b7ad93410"/></dir><dir name="sql"><dir name="simpleseo_setup"><file name="mysql4-install-0.2.0.php" hash="e6c4d3f985200a5f38b5f3465311d9cc"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Kvh_Simpleseo.xml" hash="6cb871dc56b9e5b4e0b13ef121723011"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

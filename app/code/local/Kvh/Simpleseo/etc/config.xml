@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Kvh_Simpleseo>
-            <version>0.2.0</version>
+            <version>0.3.0</version>
         </Kvh_Simpleseo>
     </modules>
       
@@ -71,12 +71,20 @@
                     </kvh_simpleseo_page_edit_tab_content>
                 </observers>
             </adminhtml_cms_page_edit_tab_meta_prepare_form>
+		  
 		 
+			
 			
 			
 			
         </events>
 	
-	
+	<rewrite>
+        <fancy_url>
+                  <from><![CDATA[/simpleseo\/(.*)/]]></from>
+                  <to><![CDATA[catalogsearch/result/index/?q=$1]]></to>
+                      <complete>1</complete>
+            </fancy_url>
+        </rewrite>
     </global> 
 </config>

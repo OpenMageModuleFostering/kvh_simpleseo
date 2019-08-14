@@ -66,4 +66,6 @@ class Kvh_Simpleseo_Model_Observer
 		
 		 
 		
+		 
+		
 }

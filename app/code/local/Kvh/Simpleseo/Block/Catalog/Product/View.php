@@ -45,18 +45,21 @@ class Kvh_Simpleseo_Block_Catalog_Product_View extends Mage_Catalog_Block_Produc
 			 
 			if($p[0]=="product")
 			{
-				$attribute=substr($w,8);	
+				 $attribute=substr($w,8);	
 				$attributeModel = Mage::getModel('eav/entity_attribute')->loadByCode("catalog_product",$attribute);
+			 
+				 $attrtype=$attributeModel->getFrontendInput();
 				 
-				$attrtype=$attributeModel->getFrontendInput();
-				
 				switch($attrtype)
 				{
 				case "text":
 						$data=$product->getData($attribute); 
 					break;
+				case "price":
+						$data=$product->getData($attribute); 
+					break;				
 				case  "select":
-						$data=$product->getAttributeText($attribute); 
+					$data=$product->getAttributeText($attribute); 
 					break;
 				
 				} 
@@ -116,6 +119,7 @@ class Kvh_Simpleseo_Block_Catalog_Product_View extends Mage_Catalog_Block_Produc
             if (!$description) {
                 $headBlock->setDescription($product_meta_description);
 		}
+		
 			 
 		
 	}

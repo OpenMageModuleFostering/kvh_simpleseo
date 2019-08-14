@@ -3,7 +3,7 @@
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
-    "description": "Set Meta Deta for Category Product and CMS Page",
+    "description": " Set Dyanamic Meta Title , Meta Keyword, Meta Description for category and product and Meta Title for Cms Page ",
     "authors": [
     {
         "name": "Hitesh Agrawal",
