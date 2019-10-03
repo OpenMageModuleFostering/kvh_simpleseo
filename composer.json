@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Kvh_Simpleseo",
+    "name": "openmage-module-fostering\/kvh_simpleseo",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": " Set Dyanamic Meta Title , Meta Keyword, Meta Description for category and product and Meta Title for Cms Page ",
     "authors": [
